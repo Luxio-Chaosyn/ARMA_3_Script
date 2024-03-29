@@ -1,0 +1,13 @@
+call RemoveMagicAction;
+arr = [];
+tmp = player addaction ["<t color='#AA0011'>Animate Dead</t>","AnimateDead.sqf"];
+arr pushBack tmp;
+tmp = player addaction ["<t color='#AA0011'>Release Undead</t>","ReleaseUndead.sqf"];
+arr pushBack tmp;
+tmp = player addaction ["<t color='#AA0011'>Store Undead</t>","StoreUndead.sqf"];
+arr pushBack tmp;
+tmp = player addaction ["<t color='#AA0011'>Check Undead</t>","CheckUndead.sqf"];
+arr pushBack tmp;
+tmp = player addaction ["<t color='#FF0000'>Close Spellbook</t>","CloseSB.sqf"];
+arr pushBack tmp;
+player setVariable ["MAction", arr, false];
